@@ -294,6 +294,39 @@ Delta time                      : 1 ms
 MIDI message fragment (3rd/last): f7
 ```
 
+#### Variation
+
+BLE MIDI packet data file:
+[
+p6_e1p_System_Exclusive_Start_and_End_in_1_Packet_with_System_Real-time_plus_Another_Packet.ns.jsonl
+](p6_e1p_System_Exclusive_Start_and_End_in_1_Packet_with_System_Real-time_plus_Another_Packet.ns.jsonl)
+
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this and it does not appear in the results.**
+
+Example of parse result (integrated):
+
+```
+MIDI message: f0 43 12 00 43 12 00 43 12 00 f7
+Delta time  : 1 ms
+MIDI message: fe
+Delta time  : 2 ms
+MIDI message: e0 00 40
+```
+
+Example of parse result (fragmented):
+
+```
+MIDI message fragment (1st)     : f0 43 12 00
+Delta time                      : 1 ms
+MIDI message                    : fe
+Delta time                      : 0 ms
+MIDI message fragment (2nd)     : 43 12 00 43 12 00
+Delta time                      : 1 ms
+MIDI message fragment (3rd/last): f7
+Delta time                      : 1 ms
+MIDI message                    : e0 00 40
+```
+
 ### Page 6. System Exclusive Split Across 2 Packets with System Real-Time
 
 > ![Describe taken from page 6 of the specification](images/p6_e.png)
@@ -331,6 +364,47 @@ Delta time                      : 0 ms
 MIDI message fragment (4th)     : 43 12 00
 Delta time                      : 1 ms
 MIDI message fragment (5th/last): f7
+```
+
+#### Variation
+
+BLE MIDI packet data file:
+[
+p6_e2p_System_Exclusive_Split_Across_1_Packets_with_System_Real-time_plus_Another_Packet.ns.jsonl
+](p6_e2p_System_Exclusive_Split_Across_1_Packets_with_System_Real-time_plus_Another_Packet.ns.jsonl)
+
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this and it does not appear in the results.**
+
+Example of parse result (integrated):
+
+```
+MIDI message: f0 43 12 00 43 12 00 43 12 00 f7
+Delta time  : 1 ms
+MIDI message: fe
+Delta time  : 1 ms
+MIDI message: fe
+Delta time  : 2 ms
+MIDI message: e0 00 40
+```
+
+Example of parse result (fragmented):
+
+```
+MIDI message fragment (1st)     : f0 43
+Delta time                      : 1 ms
+MIDI message                    : fe
+Delta time                      : 0 ms
+MIDI message fragment (2nd)     : 12 00
+Delta time                      : 0 ms
+MIDI message fragment (3rd)     : 43 12 00
+Delta time                      : 1 ms
+MIDI message                    : fe
+Delta time                      : 0 ms
+MIDI message fragment (4th)     : 43 12 00
+Delta time                      : 1 ms
+MIDI message fragment (5th/last): f7
+Delta time                      : 1 ms
+MIDI message                    : e0 00 40
 ```
 
 ### Page 6. System Exclusive Split Across 3 Packets with System Real-Time
@@ -378,6 +452,55 @@ Delta time                      : 0 ms
 MIDI message fragment (6th)     : 12 00
 Delta time                      : 1 ms
 MIDI message fragment (7th/last): f7
+```
+
+#### Variation
+
+BLE MIDI packet data file:
+[
+p6_e3p_System_Exclusive_Split_Across_3_Packets_with_System_Real-time_plus_Another_Packet.ns.jsonl
+](p6_e3p_System_Exclusive_Split_Across_3_Packets_with_System_Real-time_plus_Another_Packet.ns.jsonl)
+
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this and it does not appear in the results.**
+
+Example of parse result (integrated):
+
+```
+MIDI message: f0 43 12 00 43 12 00 43 12 00 f7
+Delta time  : 1 ms
+MIDI message: fe
+Delta time  : 1 ms
+MIDI message: fe
+Delta time  : 1 ms
+MIDI message: fe
+Delta time  : 2 ms
+MIDI message: e0 00 40
+```
+
+Example of parse result (fragmented):
+
+```
+MIDI message fragment (1st)     : f0 43
+Delta time                      : 1 ms
+MIDI message                    : fe
+Delta time                      : 0 ms
+MIDI message fragment (2nd)     : 12 00
+Delta time                      : 0 ms
+MIDI message fragment (3rd)     : 43 12
+Delta time                      : 1 ms
+MIDI message                    : fe
+Delta time                      : 0 ms
+MIDI message fragment (4th)     : 00
+Delta time                      : 0 ms
+MIDI message fragment (5th)     : 43
+Delta time                      : 1 ms
+MIDI message                    : fe
+Delta time                      : 0 ms
+MIDI message fragment (6th)     : 12 00
+Delta time                      : 1 ms
+MIDI message fragment (7th/last): f7
+Delta time                      : 1 ms
+MIDI message                    : e0 00 40
 ```
 
 ### Page 7. Overflow high
