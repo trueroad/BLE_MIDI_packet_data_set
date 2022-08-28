@@ -30,7 +30,9 @@ Then, PC1 begins to act as a BLE-MIDI peripheral.
 
 #### 2. On PC2, pair with PC1's BLE-MIDI peripheral
 
-Use the Bluetooth configuration in Windows to pair the devices.
+On PC2, select Start -> Settings -> Devices -> Bluetooth & other devices -> Add Bluetooth or other devide -> Bluetooth.
+Choose PC1's BLE-MIDI and follow additional instructions if they appear, then select Done.
+PC1 also receives a pairing notification, so follow the instructions on PC1.
 
 #### 3. On PC2, run the BLE-MIDI driver or software
 
@@ -50,11 +52,17 @@ If you are using "WinRT MIDI IN Timing with C++/WinRT", you can stop using Ctrl-
 
 #### 6. On PC2, unpair with PC1
 
-Use the Bluetooth configuration in Windows to remove all devices of PC1.
+On PC2, select Start -> Settings -> Devices -> Bluetooth & other devices.
+Remove all devices of PC1.
+
+Note: You cannot use the emulator again until both PCs have unpaired each other.
 
 #### 7. On PC1, unpair with PC2
 
-Use the Bluetooth configuration in Windows to remove all devices of PC2.
+On PC1, select Start -> Settings -> Devices -> Bluetooth & other devices.
+Remove all devices of PC2.
+
+Note: You cannot use the emulator again until both PCs have unpaired each other.
 
 ## Test data set
 
