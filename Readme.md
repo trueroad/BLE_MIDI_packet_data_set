@@ -287,11 +287,11 @@ Example of parse result (fragmented):
 ```
 MIDI message fragment (1st)     : f0 43 12 00
 Delta time                      : 1 ms
-MIDI message fragment (2nd)     : fe
+MIDI message                    : fe
 Delta time                      : 0 ms
-MIDI message fragment (3rd)     : 43 12 00 43 12 00
+MIDI message fragment (2nd)     : 43 12 00 43 12 00
 Delta time                      : 1 ms
-MIDI message fragment (4th/last): f7
+MIDI message fragment (3rd/last): f7
 ```
 
 ### Page 6. System Exclusive Split Across 2 Packets with System Real-Time
