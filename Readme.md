@@ -157,7 +157,7 @@ BLE MIDI packet data file:
 p4_2_System_Messges_Do_Not_Cancel_Running_Status.ns.jsonl
 ](p4_2_System_Messges_Do_Not_Cancel_Running_Status.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this correctly and produces broken results.**
+**\*\*\*WARNING\*\*\*: This data was incorrect until [2025-06-23](https://github.com/trueroad/BLE_MIDI_packet_data_set/pull/1). I haven't yet verified the operation after the correction.**
 
 Example of *correct* parse result:
 
