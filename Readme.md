@@ -157,7 +157,8 @@ BLE MIDI packet data file:
 p4_2_System_Messges_Do_Not_Cancel_Running_Status.ns.jsonl
 ](p4_2_System_Messges_Do_Not_Cancel_Running_Status.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: This data was incorrect until [2025-06-23](https://github.com/trueroad/BLE_MIDI_packet_data_set/pull/1). I haven't yet verified the operation after the correction.**
+**\*\*\*WARNING\*\*\*: This data was incorrect until [2025-06-23](https://github.com/trueroad/BLE_MIDI_packet_data_set/pull/1).**  
+**\*\*\*WARNING\*\*\*: Windows 10 22H2 cannot parse this correctly and produces broken results.**
 
 Example of *correct* parse result:
 
@@ -272,7 +273,7 @@ BLE MIDI packet data file:
 p6_e1_System_Exclusive_Start_and_End_in_1_Packet_with_System_Real-time.ns.jsonl
 ](p6_e1_System_Exclusive_Start_and_End_in_1_Packet_with_System_Real-time.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this and it does not appear in the results.**
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 22H2 cannot parse this and it does not appear in the results.**
 
 Example of parse result (integrated):
 
@@ -301,7 +302,7 @@ BLE MIDI packet data file:
 p6_e1p_System_Exclusive_Start_and_End_in_1_Packet_with_System_Real-time_plus_Another_Packet.ns.jsonl
 ](p6_e1p_System_Exclusive_Start_and_End_in_1_Packet_with_System_Real-time_plus_Another_Packet.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this and it does not appear in the results.**
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 22H2 cannot parse this and it does not appear in the results.**
 
 Example of parse result (integrated):
 
@@ -336,7 +337,7 @@ BLE MIDI packet data file:
 p6_e2_System_Exclusive_Split_Across_1_Packets_with_System_Real-time.ns.jsonl
 ](p6_e2_System_Exclusive_Split_Across_1_Packets_with_System_Real-time.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this and it does not appear in the results.**
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 22H2 cannot parse this and it does not appear in the results.**
 
 Example of parse result (integrated):
 
@@ -373,7 +374,7 @@ BLE MIDI packet data file:
 p6_e2p_System_Exclusive_Split_Across_1_Packets_with_System_Real-time_plus_Another_Packet.ns.jsonl
 ](p6_e2p_System_Exclusive_Split_Across_1_Packets_with_System_Real-time_plus_Another_Packet.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this and it does not appear in the results.**
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 22H2 cannot parse this and it does not appear in the results.**
 
 Example of parse result (integrated):
 
@@ -416,7 +417,7 @@ BLE MIDI packet data file:
 p6_e3_System_Exclusive_Split_Across_3_Packets_with_System_Real-time.ns.jsonl
 ](p6_e3_System_Exclusive_Split_Across_3_Packets_with_System_Real-time.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this and it does not appear in the results.**
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 22H2 cannot parse this and it does not appear in the results.**
 
 Example of parse result (integrated):
 
@@ -461,7 +462,7 @@ BLE MIDI packet data file:
 p6_e3p_System_Exclusive_Split_Across_3_Packets_with_System_Real-time_plus_Another_Packet.ns.jsonl
 ](p6_e3p_System_Exclusive_Split_Across_3_Packets_with_System_Real-time_plus_Another_Packet.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this and it does not appear in the results.**
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 22H2 cannot parse this and it does not appear in the results.**
 
 Example of parse result (integrated):
 
@@ -529,7 +530,7 @@ BLE MIDI packet data file:
 p7_e2_Overflow_low.ns.jsonl
 ](p7_e2_Overflow_low.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this correctly and produces wrong delta time in the results.**
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 22H2 cannot parse this correctly and produces wrong delta time in the results.**
 
 Example of parse result:
 
@@ -548,7 +549,7 @@ BLE MIDI packet data file:
 p7_e3_Overflow_both.ns.jsonl
 ](p7_e3_Overflow_both.ns.jsonl)
 
-**\*\*\*WARNING\*\*\*: Windows 10 21H2 cannot parse this correctly and produces wrong delta time in the results.**
+**\*\*\*WARNING\*\*\*: Windows 10 21H2 22H2 cannot parse this correctly and produces wrong delta time in the results.**
 
 Example of parse result:
 
